@@ -2,6 +2,7 @@ import express from "express";
 import { TwitterApi } from "twitter-api-v2";
 import process from "process";
 import axios from "axios";
+import https from 'https';
 
 // consumer keys - api key
 const appKey = process.env.TWITTER_API_KEY;
@@ -93,7 +94,7 @@ const greet2 = async () => {
 
 };
 
-app.get("/tweet", (req, res) => {
+app.get("/amazon", (req, res) => {
     try {
         greet2();
     } catch (err) {
